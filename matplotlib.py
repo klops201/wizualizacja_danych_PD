@@ -26,5 +26,10 @@ xlsx = pd.ExcelFile('imiona.xlsx')
 df = pd.read_excel(xlsx)
 df3 = df.where(df['Rok'] > 2012).groupby(['Plec']).agg({'Liczba': {'sum'}})
 
-wykres = df3.plot.pie(subplots=True, fontsize=20)
+wykres = df3.plot.pie(subplots=True, fontsize=40)
 plt.show()
+
+print('\n\n')
+
+#zad4.
+print('------zadanie 4------')
